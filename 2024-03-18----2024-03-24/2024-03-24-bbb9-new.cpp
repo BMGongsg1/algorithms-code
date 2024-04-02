@@ -1,4 +1,4 @@
-//2086: [蓝桥杯2023初赛] 砍树
+//2086: [蓝桥杯2023初赛] 砍树(LCA+树形差分变种)
 #include<bits/stdc++.h>
 using namespace std;
 int main()

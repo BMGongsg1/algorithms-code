@@ -25,7 +25,7 @@ int main()
     {
         deep[node] = deep[father]+1;
         dp[node][0] = father;
-;        for(int i=1;i<=20;i++)
+        for(int i=1;i<=20;i++)
         {
             dp[node][i] = dp[dp[node][i-1]][i-1];
         }
