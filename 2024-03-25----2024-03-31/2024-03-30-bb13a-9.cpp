@@ -1,6 +1,7 @@
 //数的拆分
 #include<bits/stdc++.h>
 using namespace std;
+#define int long long
 int a;
 int qpow(int a,int b)
 {
@@ -42,7 +43,7 @@ void dfs(int now,int nowx,bool op)
         nowx*=z[now].first;
     }
 }
-int main(){
+signed main(){
     ios::sync_with_stdio(false);
     cin.tie(0),cout.tie(0);
 
