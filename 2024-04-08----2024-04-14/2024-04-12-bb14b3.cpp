@@ -39,11 +39,15 @@ int main(){
         int flag = 1;
         for(int i=0;i<n;i++)
         {
-            if(gold[i][0]/mid<gold[i][1]) flag = 0;
+            if(gold[i][0]/mid>gold[i][1]) {
+                flag = 0;
+                // cout<<gold[i][0]/mid<<"  "<<mid<<endl;
+            }
         }
         if(flag == 0)
         {
             left = mid+1;
+            
         }
         else 
         {
@@ -51,7 +55,7 @@ int main(){
         }
     }
     int minn = left;
-    cout<<maxx1<<"  "<<minn<<endl;
+    cout<<minn<<" "<<maxx1-1<<endl;
 
     return 0;
 }
