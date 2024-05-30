@@ -1,27 +1,22 @@
 //测试用
 #include<bits/stdc++.h>
-#define int long long
 using namespace std;
-int main()
+
+long long pow(int a,int n,int m)
 {
-	int n;
-	cin>>n;
-	vector<int> nums(n);
-	for(int i=0;i<nums.size();i++)
+	long long ans = 1;
+	while(n)
 	{
-		cin>>nums[i];
+		if(n&1) ans = (ans*a)%m;
+		a = (a*a)%m;
+		n>>=1;
 	}
 
-	auto LCM = [&] (int a,int b){
-		return a/__gcd(a,b)*b;
-	}
-	vector<int> 
-	for(int i=0;i<nums.size();i++)
-	{
-		for(int j=i+1;j<nums.size();j++)
-		{
-			
-		}
-	}
+	return ans;
+}
+
+int main(){
+
+	cout<<pow(2,13,10909090)<<endl;
 	return 0;
 }
